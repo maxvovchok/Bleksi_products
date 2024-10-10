@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Керування продуктами</title>
+  </head>
+  <body>
+    <aside id="sidebar">
+      <h3>Категорії</h3>
+      <ul id="category-list"></ul>
+    </aside>
+
+    <h2>Список продуктів</h2>
+    <div id="product-list"></div>
+
+    <div>
+      <h2>Додати новий продукт</h2>
+      <form id="product-form">
+        <label for="productName">Назва продукту</label>
+        <input type="text" id="productName" required />
+
+        <label for="productDescription">Опис продукту</label>
+        <textarea id="productDescription" required></textarea>
+
+        <label for="productPrice">Ціна</label>
+        <input type="number" id="productPrice" required />
+
+        <label for="productImages">Зображення</label>
+        <input type="text" id="productImages" required />
+
+        <label for="productMainImage">Основне зображення</label>
+        <input type="text" id="productMainImage" required />
+
+        <label for="productCategories">Категорії</label>
+        <input type="text" id="productCategories" required />
+
+        <label for="productAttributes">Атрибути</label>
+        <input type="text" id="productAttributes" required />
+
+        <button type="submit">Додати продукт</button>
+      </form>
+      <div id="content"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
